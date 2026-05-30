@@ -73,7 +73,15 @@ namespace Client
                         Console.WriteLine("Syntax: /block username");
                 }
                 else
-                    client.AcknowledgeLetter();
+                    try
+                    {
+                        client.AcknowledgeLetter();
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Failed acknowledging letter");
+                    }
+                    
             }
 
         }

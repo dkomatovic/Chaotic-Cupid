@@ -13,7 +13,7 @@ namespace Server
             {
                 host.Open();
                 Console.WriteLine("--- Cupid service ---");
-                Console.WriteLine("Press any key to exit...");
+                Console.WriteLine("Press enter key to exit...");
                 Console.ReadLine();
                 host.Close();
             }
