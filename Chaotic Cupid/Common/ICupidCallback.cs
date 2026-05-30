@@ -2,10 +2,9 @@
 
 namespace Common
 {
-    
-    internal interface ICupidCallback
+    public interface ICupidCallback
     {
         [OperationContract(IsOneWay = true)]
-        void ReceiveLetter(string fromUsername, string fromCity, int fromAge, string fromPhone, string message);
+        void ReceiveLetter(Letter letter);
     }
 }
